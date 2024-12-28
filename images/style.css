@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navigation bar */
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+    width: 100%;
+}
+
+#mainlogo img {
+    width: 60px;
+    margin: 5px 10px;
+}
+
+.navigations {
+    display: flex;
+}
+
+.navigations li {
+    list-style: none;
+
+}
+
+.navigations li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 11px 12px;
+    margin: 15px 12px;
+    font-size: 1.2rem;
+    color: black;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 100;
+    font-style: normal;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.navigations li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+}
+
+/* home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 200px;
+    height: 400px;
+    position: relative;
+    
+}
+
+#home::before {
+    content: "";
+    background: url('back.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: -78px;
+    left: 0;
+    width: 100%;
+    height: 119%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.center {
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: black;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 100;
+    font-style: normal;
+    position: relative;
+}
+
+#home p {
+    font-size: 1.5rem;
+    font-weight: 1000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn {
+    font-size: 1.8rem;
+    padding: 8px;
+    margin: 20px;
+    font-weight: bold;
+    background-color: rgb(240, 146, 146);
+    border: 2px solid;
+    border-radius: 25px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.btn:hover {
+    border: 4px solid red;
+}
+
+/* our services */
+
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#services p{
+    font-size: 1.2rem;
+}
+
+#box1 {
+    border: 2px solid rgb(216, 140, 140);
+    margin: 0px 20px;
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: 13px 13px 10px rgb(247, 171, 171);
+    border-radius: 20px;
+}
+
+#box2 {
+    border: 2px solid rgb(216, 140, 140);
+    ;
+    margin: 20px;
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: 13px 13px 10px rgb(247, 171, 171);
+    border-radius: 20px;
+
+}
+
+#box3 {
+    border: 2px solid rgb(216, 140, 140);
+    margin: 0px 20px;
+    text-align: center;
+    padding: 10px 10px;
+    box-shadow: 13px 13px 5px rgb(247, 171, 171);
+    border-radius: 20px;
+}
+
+#box1 img {
+    display: block;
+    margin: auto;
+}
+
+#box2 img {
+    display: block;
+    margin: auto;
+}
+
+#box3 img {
+    display: block;
+    margin: auto;
+    height: 220px;
+}
+
+/* clients section */
+#clients-section {
+    position: relative;
+    height: 313px;
+    margin: 25px 0;
+}
+
+.clients {
+    margin: 70px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo1 img {
+    display: block;
+    height: 100px;
+    margin: 2px 10px;
+}
+
+#logo2 img {
+    display: block;
+    height: 100px;
+    margin: 2px 10px;
+}
+
+#logo3 img {
+    display: block;
+    height: 100px;
+    margin: 2px 10px;
+}
+
+#logo4 img {
+    display: block;
+    height: 100px;
+    margin: 2px 10px;
+}
+
+#clients-section ::before {
+    content: "";
+    background: url('bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 46vh;
+    z-index: -1;
+    opacity: 0.07;
+}
+
+/* contact us section */
+#contact-us{
+    height: 700px;
+    position: relative;
+    margin: 25px 0;
+}
+
+#contact-us ::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('contact.avif') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.05;
+}
+
+#contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#contact input, #contact textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 3px solid rgb(78, 1, 1);
+    margin: 5px 0;
+}
+
+#contact form{
+    width: 40%;
+  
+}
+#contact form label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#contact form input{
+    font-size: 1.2rem;
+}
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn2{
+    font-size: 1.8rem;
+    padding: 8px;
+    margin: auto;
+    font-weight: bold;
+    background-color: rgb(240, 146, 146);
+    border: 2px solid;
+    border-radius: 25px;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 100;
+    font-style: normal;
+    display: block;
+    
+}
+.btn2:hover {
+    border: 4px solid red;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 0;
+}
+
+/* utility classes  */
+.h-primary {
+    font-size: 3rem;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 10;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 10;
+    font-style: normal;
+}
+
+.p-primary {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

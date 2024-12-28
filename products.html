@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="phone.css"> -->
+</head>
+
+<body>
+    <!-- <marquee bgcolor="yellow" height="30px" style="font-size: 1.5rem; color:red" behavior="alternate" direction="right">
+        30% off sale is LIVE!!!</marquee> -->
+    <nav id="navbar">
+        <div id="mainlogo">
+            <img onclick="window.location.href='index.html'" src="./images/mainlogo2.png" alt="image not found">
+        </div>
+        <ul class="navigations">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="products.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-cart-shopping cartQuantity"
+                style=" height:2.7rem; width:5rem; margin: 1rem; font-size:1.3rem; padding:0.7rem; background-color:black; color:white; border-radius:0.5rem">
+                0</i>
+        </ul>
+    </nav>
+
+    <section class="sale_section">
+        <div class="cont">
+            <div class="sale_text">
+                <h1>Bumper Offer!!!</h1>
+                <h2>Rakhshabandhan special presents</h2>
+                <p>
+                    Get 30% discount on your first order and get sweets on every order!!! order now
+                </p>
+                <button class="explore_products" onclick="window.location.href='#card-section';">Explore
+                    Products</button>
+            </div>
+            <div class="sale_img">
+                <img src="./images/sale_img.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="food_category">
+        <h2 style="margin: 15px;" class="common-heading">You can order</h2>
+        <!-- <p class="common-para">get the tasty meal ordered in minutes</p> -->
+        <div class="category">
+            <div>
+                <img class="category-img" src="./images/pizza.avif" alt="">
+            </div>
+            <div>
+                <img class="category-img" src="./images/burger.avif" alt="">
+            </div>
+            <div>
+                <img class="category-img" src="./images/chinese.avif" alt="">
+            </div>
+            <div>
+                <img class="category-img" src="./images/North Indian.avif" alt="">
+            </div>
+            <div>
+                <img class="category-img" src="./images/noodles.avif" alt="">
+            </div>
+        </div>
+    </section>
+    <hr>
+    <div>
+        <h2 style="margin: 15px;" class="common-heading">Filter by</h2>
+        <section class="filter">
+            <p class="fil" id="f1">Pizzas</p>
+            <p class="fil" id="f2">Burgers</span>
+            <p class="fil" id="f3">Noodles</p>
+            <p class="fil" id="f4">North Ind</p>
+            <p class="fil" id="f5">Chinese</p>
+            <p class="fil" id="f6">Biryani</p>
+        </section>
+    </div>
+    <hr>
+    <section id="card-section" class="card-section">
+        <div class="heading-cont">
+            <h2 style="margin: 15px;" class="common-heading">Checkout our Menu</h2>
+        </div>
+
+        <section class="template_container">
+            <div class="product-cont">
+                <!-- <div class="productTemplate">
+                    <div class="cards" id="cardValue">
+                        <article class="product-info">
+                            <span class="type">Biryani</span>
+                            <div class="image-cont">
+                                <img class="product-img" src="./images/biryani2.jpg" alt="">
+                            </div>
+                            <h2 class="product-name">Biryani</h2>
+                            <div class="product-rating">
+                                <i class="fa-solid fa-star fa-2xs" style="color: #ecbc0b;"></i>
+                                <i class="fa-solid fa-star fa-2xs" style="color: #ecbc0b;"></i>
+                                <i class="fa-solid fa-star fa-2xs" style="color: #ecbc0b;;"></i>
+                                <i class="fa-solid fa-star fa-2xs" style="color: #ecbc0b;"></i>
+                                <i class="fa-solid fa-star fa-2xs" style="color: #ecbc0b;"></i>
+                            </div>
+            
+                            <p style="font-size: 1rem;" class= "product-description">Biryani is a spiced rice dish with meat or vegetables, known for its rich flavors and aromatic spices.</p>
+            
+                            <div class="price-cont">
+                                <div class="product-price">&#8377;299</div>
+                                <div class="actual-price">&#8377;899</div>
+                            </div>
+            
+                            <div class="product-stock">
+                                <p style="font-size: 1.3rem" class="productProperty">Total Stock available: </p>
+                                <p style="font-size: 1.3rem" class="stock">50</p>
+                            </div>
+            
+                            <div class="ProductQuantityElement">
+                                <div style="font-size: 1.3rem" class="productProperty">Quantity(pieces)</div>
+                                <div class="stockElement">
+                                    <button class="cartIncrement">+</button>
+                                    <p class="product-quantity">1</p>
+                                    <button class="cartDecrement">-</button>
+                                </div>
+                            </div>
+            
+                            <button class="add-to-cart-btn">
+                                <i class="fa-solid fa-cart-shopping"> Add to cart</i>
+                            </button>
+                        </article>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </section>
+
+    <template class="productTemplate">
+        <div class="cards" id="cardValue">
+            <article class="product-info">
+                <span class="type"></span>
+                <div class="image-cont">
+                    <img class="product-img" src="" alt="">
+                </div>
+                <h2 class="product-name"></h2>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                </div>
+
+                <p style="font-size: 1rem;" class="product-description"></p>
+
+                <div class="price-cont">
+                    <div class="product-price"></div>
+                    <div class="actual-price"></div>
+                </div>
+
+                <div class="product-stock">
+                    <p style="font-size: 1.3rem" class="productProperty">Total Stock available: </p>
+                    <p style="font-size: 1.3rem" class="stock"></p>
+                </div>
+
+                <div class="ProductQuantityElement">
+                    <div style="font-size: 1.3rem" class="productProperty">Quantity(pieces)</div>
+                    <div class="stockElement">
+                        <button class="cartIncrement">+</button>
+                        <p class="product-quantity">1</p>
+                        <button class="cartDecrement">-</button>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"> Add to cart</i>
+                </button>
+            </article>
+        </div>
+    </template>
+
+    <div class="footer-container">
+
+    </div>
+
+    <script  type="module">
+        import {filterClickHandler} from './filterClick.js'
+        document.querySelector('.filter').addEventListener('click', (event) => {
+            filterClickHandler(event);
+        })
+    </script>
+    <script type="module" src="main.js"></script>
+    <script src="footer.js"></script>
+</body>
+
+</html>

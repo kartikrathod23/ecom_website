@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="mainlogo">
+            <img onclick="window.location.href='index.html'" src="./images/mainlogo2.png" alt="image not found">
+        </div>
+        <ul class="navigations">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="products.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-cart-shopping cartQuantity"
+                style=" height:2.7rem; width:5rem; margin: 1rem; font-size:1.3rem; padding:0.7rem; background-color:black; color:white; border-radius:0.5rem">
+                0</i>
+        </ul>
+    </nav>
+
+    <section class="cartElements">
+        <div class="cartContainer">
+            <section>
+                <div id="cartProductContainer">
+                    <!-- <div class="productCard" id="cardValue">
+                        <article class="cartProduct-info">
+                            <div>
+                                <span class="cartProduct-category">Biryani</span>
+                            </div>
+                            <div class="img-container">
+                                <img src="./images/biryani2.jpg" alt="" class="productImg">
+                            </div>
+    
+                            <h2 class="product-name">Biryani</h2>
+    
+                            <p class="cartProduct-price">₹149.99</p>
+    
+                            <div class="ProductQuantityElement">
+                                <button class="cartIncrement">+</button>
+                                <p class="product-quantity">1</p>
+                                <button class="cartDecrement">-</button>
+                            </div>
+    
+                            <button class="remove-btn">Remove</button>
+    
+                        </article>
+                    </div> -->
+                </div>
+            </section>
+
+            <section class="productTotalContainer">
+                <div class="productTotal">
+                    <p style="font-size: 1.8rem; font-weight:800">Selected Offer Sumarry</p>
+                    <div class="productOrderTotal">
+                        <div class="subTotal">
+                            <p style="font-size: 1.5rem;">Sub Total: </p>
+                            <div class="productSubTotal" style="font-size: 1.5rem;">0</div>
+                        </div>
+                        <div class="tax">
+                            <p style="font-size: 1.5rem;">Tax: </p>
+                            <p class="productTax" style="font-size: 1.5rem;">₹50</p>
+                        </div>
+                        <hr>
+                        <div class="total">
+                            <p style="font-size: 1.8rem; font-weight:500">Final Total: </p>
+                            <p class="productFinalTotal">0</p>
+                        </div>
+                        <button class="remove-btn2">Place Order</button>
+                    </div>
+                </div>
+            </section>
+
+            <template class="cartTemplate">
+                <div class="productCard" id="cardValue">
+                    <article class="cartProduct-info">
+                        <div>
+                            <span class="cartProduct-category"></span>
+                        </div>
+                        <div class="img-container">
+                            <img src="" alt="" class="productImg">
+                        </div>
+
+                        <h2 class="product-name"></h2>
+
+                        <p class="cartProduct-price"></p>
+
+                        <div class="ProductQuantityElement">
+                            <button class="cartIncrement">+</button>
+                            <p class="product-quantity">1</p>
+                            <button class="cartDecrement">-</button>
+                        </div>
+
+                        <button class="remove-btn"><span>Remove</span></button>
+
+                    </article>
+                </div>
+            </template>
+        </div>
+    </section>
+
+
+    <script type="module" src="main2.js"></script>
+    <!-- <script src="footer.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyOnlineFoodia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" media="screen and (max-width: 1170px)" href="phone.css"> -->
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="mainlogo">
+            <img onclick="window.location.href='index.html'" src="./images/mainlogo2.png" alt="image not found">
+        </div>
+        <ul class="navigations">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="products.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <i class="fa-solid fa-cart-shopping cartQuantity"
+                style=" height:2.7rem; width:5rem; margin: 1rem; font-size:1.3rem; padding:0.7rem; background-color:black; color:white; border-radius:0.5rem; cursor:pointer;">
+                0</i>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2 class="center1">Welcome to MyOnlineFoodia</h2>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nostrum enim impedit, ex
+            fugit alias culpa dicta corrupti eveniet placeat molestiae ad et eius quas minima? Impedit quidem odio
+            itaque!
+        </p>
+        <a href="products.html"><button class="btn">Order Now</button></a>
+    </section>
+    <hr class="horizontal">
+    <section id="services-container">
+        <h1 class="h-primary center">Our services</h1>
+        <div id="services">
+            <div id="box1" class="box">
+                <img src="./images/img1.png" alt="Error">
+                <h2 class="h-secondary">Bulk Ordering</h2>
+                <p class="p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis
+                    laudantium iure. Magnam odio iste reprehenderit quasi aliquid commodi molestiae?Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Eos vitae adipisci nostrum laboriosam tenetur atque maiores
+                    ut illo, ad doloribus?</p>
+            </div>
+            <div id="box2" class="box">
+                <img src="./images/image2.png" alt="">
+                <h2 class="h-secondary">Food Catering</h2>
+                <p class="p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis
+                    laudantium iure. Magnam odio iste reprehenderit quasi aliquid commodi molestiae?Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Eos vitae adipisci nostrum laboriosam tenetur atque maiores
+                    ut illo, ad doloribus?</p>
+            </div>
+            <div id="box3" class="box">
+                <img src="./images/image3 .png" alt="">
+                <h2 class="h-secondary">Food Delivery</h2>
+                <p class="p-primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum reiciendis
+                    laudantium iure. Magnam odio iste reprehenderit quasi aliquid commodi molestiae?Lorem ipsum dolor
+                    sit amet consectetur, adipisicing elit. Eos vitae adipisci nostrum laboriosam tenetur atque maiores
+                    ut illo, ad doloribus?</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <h1 class="h-primary center" style="margin: 1.5rem 0;">Our Menu</h1>
+    <section class="template_container">
+        <div class="product-cont">
+
+        </div>
+    </section>
+
+    <template class="productTemplate">
+        <div class="cards" id="cardValue">
+            <article class="product-info">
+                <span class="type"></span>
+                <div class="image-cont">
+                    <img class="product-img" src="" alt="">
+                </div>
+                <h2 class="product-name"></h2>
+                <div class="product-rating">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                </div>
+
+                <p style="font-size: 1rem;" class="product-description"></p>
+
+                <div class="price-cont">
+                    <div class="product-price"></div>
+                    <div class="actual-price"></div>
+                </div>
+
+                <div class="product-stock">
+                    <p style="font-size: 1.3rem" class="productProperty">Total Stock available: </p>
+                    <p style="font-size: 1.3rem" class="stock"></p>
+                </div>
+
+                <div class="ProductQuantityElement">
+                    <div style="font-size: 1.3rem" class="productProperty">Quantity(pieces)</div>
+                    <div class="stockElement">
+                        <button class="cartIncrement">+</button>
+                        <p class="product-quantity">1</p>
+                        <button class="cartDecrement">-</button>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-btn">
+                    <i class="fa-solid fa-cart-shopping"> Add to cart</i>
+                </button>
+            </article>
+        </div>
+    </template>
+
+    <section id="contact-us">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact">
+            <form action="https://api.web3forms.com/submit" method="POST" class="fm">
+                <input type="hidden" name="access_key" value="b350e1d6-c597-4c45-ae69-14c0a780cf56">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email" placeholder="enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone number">Phone: </label>
+                    <input type="text" name="phone number" id="phone number" placeholder="enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="locality">Locality: </label>
+                    <input type="locality" name="locality" id="locality" placeholder="enter your locality">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="essage" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="buttton">
+                    <button class="btn2" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <hr>
+
+    <div class="footer-container">
+
+    </div>
+
+
+    <script>
+        let element = document.querySelector('.center1');
+
+        // Get the inner text and extract the company name
+        let name = element.innerText;
+        let companyName = name.substring(11);
+
+        // Replace the original text with the styled company name
+        element.innerHTML = name.substring(0, 11) + "<span style='color:rgb(228, 5, 5); text-align:center;'>" + companyName + "</span>";
+    </script>
+    <script type="module" src="main.js"></script>
+    <script src="footer.js"></script>
+
+</body>
+
+</html>

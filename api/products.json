@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "Biryani",
+        "category": "Biryani",
+        "price": 149.99,
+        "stock": 20,
+        "description": "Biryani is a spiced rice dish with meat or vegetables, known for its rich flavors and aromatic spices.",
+        "image": "./images/biryani2.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Burger",
+        "category": "Burger",
+        "price": 69.99,
+        "stock": 20,
+        "description": "A sandwich consisting of a cooked patty, usually beef, placed inside a sliced bun, often with various toppings.",
+        "image": "./images/burger2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Noodles",
+        "category": "Chinese",
+        "price": 99.99,
+        "stock": 20,
+        "description": "Long, thin strips of dough, often boiled and served with sauces, vegetables, or meats in various cuisines.",
+        "image": "./images/noodles2.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Pizza",
+        "category": "Pizza",
+        "price": 199.99,
+        "stock": 20,
+        "description": "An Italian dish of a round, flat base of dough topped with tomato sauce, cheese, and various toppings.",
+        "image": "./images/pizza2.jpg"
+    },
+    {
+        "id": 5,
+        "name": "North Indian",
+        "category": "North Indian",
+        "price": 249.99,
+        "stock": 20,
+        "description": "Cuisine featuring rich, creamy curries, tandoori dishes, and a variety of bread like naan and roti.",
+        "image": "./images/North Indian2.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Chinese",
+        "category": "Chinese",
+        "price": 149.99,
+        "stock": 20,
+        "description": " Diverse cuisine known for stir-fries, noodles, dumplings, and dishes with bold flavors and unique sauces.",
+        "image": "./images/chinese2.jpg"
+    }
+]
